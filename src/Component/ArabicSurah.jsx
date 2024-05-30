@@ -76,7 +76,7 @@ const ArabicSurah = () => {
 
                                             {/*ayah sign*/}
                                             <div className="relative   ">
-                                                <img src="/public/rec-svgrepo-com (13).svg" className="h-9 w-9  "
+                                                <img src="public/rec-svgrepo-com (13).svg" className="h-9 w-9  "
                                                      alt="ayah"/>
                                                 <span
                                                     className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xs ">
