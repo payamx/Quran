@@ -24,9 +24,9 @@ const SurahList = ({item, index}) => {
                     </div>
                     <div className="  flex justify-start  items-center mx-1">
                         {item?.revelationType === "Meccan" ?
-                            <img src="/kaaba1.svg" className="h-7 w-7  " alt="مکی"/>
+                            <img src="kaaba1.svg" className="h-7 w-7  " alt="مکی"/>
                             :
-                            <img src="/medinahgreen.svg" className="h-7 w-7  " alt="مدنی"/>
+                            <img src="medinahgreen.svg" className="h-7 w-7  " alt="مدنی"/>
 
                         }
                     </div>
