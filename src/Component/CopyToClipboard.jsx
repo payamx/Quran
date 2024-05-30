@@ -29,9 +29,9 @@ const CopyToClipboard = ({arText,surahNumber,faText,index}) => {
                 onClick={() => copyToClipboard(`${arText}\n${surahNumber}\n${faText}`, index)}
                 className=" ">
                 {isItemCopied(index) ?
-                    <img src="/public/copied.svg" className="w-6 h-6" alt="copied"/>
+                    <img src="/copied.svg" className="w-6 h-6" alt="copied"/>
                     :
-                    <img src="/public/copy.svg" className="w-6 h-6" alt="copy"/>
+                    <img src="/copy.svg" className="w-6 h-6" alt="copy"/>
                 }
 
             </button>
