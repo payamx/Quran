@@ -42,11 +42,11 @@ const PlayAudio = ({audioProp}) => {
                 />
                 <button onClick={() => handlePlayAudio(audioProp)} disabled={!currentAudio === null}>
                     {currentAudio === audioProp ? (
-                            <img className="w-6 h6" src="/public/pause-svgrepo-com (3).svg" alt="Pause audio"/>
+                            <img className="w-6 h6" src="/pause-svgrepo-com (3).svg" alt="Pause audio"/>
 
 
                     ) : (
-                        <img className="w-6 h6" src="/public/play-play-button-svgrepo-com (2).svg" alt="Play audio" />
+                        <img className="w-6 h6" src="/play-play-button-svgrepo-com (2).svg" alt="Play audio" />
                     )}
                 </button>
             </div>

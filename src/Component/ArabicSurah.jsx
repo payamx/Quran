@@ -51,7 +51,7 @@ const ArabicSurah = () => {
 
                     {/*Surah name*/}
                 <div className=" relative flex justify-center items-center   text-center font-arabic  ">
-                    <img src="/public/png/pngegg.png"
+                    <img src="/png/pngegg.png"
                          className=" bg-white text-center w-3/4 h-3/4 md:w-1/4 md:h-1/4"  alt="surah"/>
                     <strong className=" absolute top-3/5 left-1/2 -translate-x-1/2 -translate-y-1/2  ">
                         {data && data.data[0]?.name}</strong>
@@ -62,7 +62,7 @@ const ArabicSurah = () => {
 
                     {data && (
                         data.data[0]?.ayahs?.map((item, index) => (
-                            <article key={index} className=" flex-col border-4 mb-8 mx-3 shadow-indigo-700 shadow-lg
+                            <article key={index} className=" flex-col border-4 mb-8 mx-3 shadow-indigo-700 shadow-md
                         rounded-xl bg-white ">
 
                                 {show.arShow && (<div className="flex items-center justify-between ">
@@ -76,7 +76,7 @@ const ArabicSurah = () => {
 
                                             {/*ayah sign*/}
                                             <div className="relative   ">
-                                                <img src="/public/rec-svgrepo-com (13).svg" className="h-9 w-9  "
+                                                <img src="/rec-svgrepo-com (13).svg" className="h-9 w-9  "
                                                      alt="ayah"/>
                                                 <span
                                                     className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xs ">

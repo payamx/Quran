@@ -21,7 +21,6 @@ const List = () => {
     const rightColumnData = data.slice(Math.ceil(data.length / 2));
 
     // {'\uFD3E '}
-    // border-2 border-x-indigo-500 border-y-cyan-700  rounded-br-3xl	rounded-tl-3xl
     return (
         <>
 
