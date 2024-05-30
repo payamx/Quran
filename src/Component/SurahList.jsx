@@ -9,7 +9,7 @@ const SurahList = ({item, index}) => {
                 <div className=" inline-flex justify-center items-center shadow-xl  bg-white rounded-2xl   ">
 
                     <div className="relative flex justify-center items-center mr-3 py-1 ">
-                        <img src="/public/starr.svg" className="h-16 w-16 relative " alt="ayah"/>
+                        <img src="starr.svg" className="h-16 w-16 relative " alt="ayah"/>
                         <span
                             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  text-gray-800 text-xs  ">
                                     {new Intl.NumberFormat('ar-EG').format(item?.number)}
