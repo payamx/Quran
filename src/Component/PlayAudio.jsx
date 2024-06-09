@@ -3,7 +3,6 @@ import React, {useRef, useState} from 'react';
 const PlayAudio = ({audioProp}) => {
     // State to track the currently playing audio
     const [currentAudio, setCurrentAudio] = useState(null);
-    // console.log(audioProp.audioSecondary,"prop")
     // Ref to store the Audio object for each audio source
     const audioRefs = useRef({});
     const handlePlayAudio = (audioSrc) => {

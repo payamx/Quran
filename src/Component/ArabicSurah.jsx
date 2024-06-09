@@ -33,7 +33,7 @@ const ArabicSurah = () => {
         <>
             {isLoading ? <Loading/> :
 
-                <div className="  ">
+                <div className=" dark:bg-gray-800 dark:text-white  ">
 
                 <div className="flex justify-around items-center py-10  ">
 
@@ -63,12 +63,12 @@ const ArabicSurah = () => {
                     {data && (
                         data.data[0]?.ayahs?.map((item, index) => (
                             <article key={index} className=" flex-col border-4 mb-8 mx-3 shadow-indigo-700 shadow-md
-                        rounded-xl bg-white ">
+                        rounded-xl bg-white dark:bg-gray-800 ">
 
                                 {show.arShow && (<div className="flex items-center justify-between ">
 
                                         {/*arabic text*/}
-                                        <p className=" p-4 text-gray-800  font-arabic leading-9 w-fit text-sm ">{item?.text}</p>
+                                        <p className=" p-4 text-gray-800  font-arabic leading-9 w-fit text-sm  dark:text-white">{item?.text}</p>
 
                                         {/*ayah numbers and audio*/}
                                         <div
@@ -98,7 +98,7 @@ const ArabicSurah = () => {
 
                                 {/* Conditionally render Farsi response */}
                                 {show.faShow && (
-                                    <blockquote className="p-4 font-farsi leading-8 text-sm text-gray-500">
+                                    <blockquote className="p-4 font-farsi leading-8 text-sm text-gray-500 dark:text-white">
                                         <p>{data.data[1]?.ayahs[index]?.text}</p>
                                     </blockquote>
                                 )}

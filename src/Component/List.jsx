@@ -24,7 +24,7 @@ const List = () => {
     return (
         <>
 
-            <div className="mx-auto">
+            <div className="mx-auto dark:bg-gray-800 dark:text-white">
                 <div className="  bg-gray-50  ">
 
                     <div className="  sm:hidden ">

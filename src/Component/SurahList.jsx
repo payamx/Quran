@@ -3,10 +3,10 @@ import {Link} from "react-router-dom";
 
 const SurahList = ({item, index}) => {
     return (
-        <div>
+        <div className="bg-white ">
             <div key={index} className="flex-col justify-center items-center text-center  m-2.5 ">
 
-                <div className=" inline-flex justify-center items-center shadow-xl  bg-white rounded-2xl   ">
+                <div className=" inline-flex justify-center items-center shadow-xl  bg-white rounded-2xl  dark:bg-gray-800 dark:text-white ">
 
                     <div className="relative flex justify-center items-center mr-3 py-1 ">
                         <img src="starr.svg" className="h-16 w-16 relative " alt="ayah"/>
