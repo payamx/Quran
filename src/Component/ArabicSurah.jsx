@@ -50,7 +50,7 @@ const ArabicSurah = () => {
                 </div>
 
                     {/*Surah name*/}
-                <div className=" relative flex justify-center items-center   text-center font-arabic  ">
+                <div className=" relative flex justify-center items-center   text-center font-arabic  text-gray-950 bg-transparent">
                     <img src="/png/pngegg.png"
                          className=" bg-white text-center w-3/4 h-3/4 md:w-1/4 md:h-1/4"  alt="surah"/>
                     <strong className=" absolute top-3/5 left-1/2 -translate-x-1/2 -translate-y-1/2  ">
