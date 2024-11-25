@@ -2,7 +2,7 @@ import {useEffect} from "react";
 import {Link, useNavigate, useParams} from 'react-router-dom';
 import {useDispatch, useSelector} from "react-redux";
 import {fetchList} from "../redux/ListSlice.jsx";
-import SurahList from "./SurahList.jsx";
+import SurahItems from "./SurahItems.jsx";
 
 const List = () => {
     const dispatch = useDispatch()
@@ -24,27 +24,27 @@ const List = () => {
     return (
         <>
 
-            <div className="mx-auto dark:bg-gray-800 dark:text-white">
-                <div className="  bg-gray-50  ">
+            <div className="mx-auto ">
+                <div className="  bg-gray-50  dark:bg-gray-700 dark:text-white">
 
                     <div className="  sm:hidden ">
 
                         {data && data?.map((item, index) => (
-                            <SurahList item={item} index={index} key={index}/>
+                            <SurahItems item={item} index={index} key={index}/>
                         ))}
                     </div>
 
                     <div className="hidden md:block">
-                        <div className="    grid grid-cols-2 gap-1  text-start  font-arabic">
-                            <div className="col-span-1 ">
+                        <div className=" grid grid-cols-2 gap-1 text-start  font-arabic">
+                            <div className="col-span-1 mx-auto">
                                 {leftColumnData?.map((item, index) => (
-                                    <SurahList item={item} index={index} key={index}/>
+                                    <SurahItems item={item} index={index} key={index}/>
 
                                 ))}
                             </div>
                             <div className="col-span-1 mx-auto">
                                 {rightColumnData?.map((item, index) => (
-                                    <SurahList item={item} index={index} key={index}/>
+                                    <SurahItems item={item} index={index} key={index}/>
 
                                 ))}
                             </div>

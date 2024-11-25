@@ -1,21 +1,23 @@
 import './App.css'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import ArabicSurah from "./Component/ArabicSurah.jsx";
+import Surah from "./Component/Surah.jsx";
 import List from "./Component/List.jsx";
-import DarkToggle from "./Component/DarkToggle.jsx";
+import SharedLayout from "./pages/SharedLayout.jsx";
+import Loading from "./Component/Loading.jsx";
 
 function App() {
 
   return (
     <>
 
-        <div className="bg-gray-50 dark:bg-gray-800 dark:text-white ">
+        <div className=" dark:bg-gray-700 h-full">
             <BrowserRouter>
-                <DarkToggle/>
-
                 <Routes>
-                     <Route path="/" index element={<List/>}/>
-                      <Route path="/surah/:number/:arabic?/:farsi?" element={<ArabicSurah/>}/>
+
+                    <Route  element={<SharedLayout/>}>
+                        <Route path="/" index  element={<List/>}/>
+                        <Route path="/surah/:number" element={<Surah/>} />
+                    </Route>
 
               </Routes>
             </BrowserRouter>

@@ -1,26 +1,22 @@
 import {useEffect, useState} from "react";
 
-const DarkToggle = () => {
-    const [isDarkMode, setIsDarkMode] = useState(null);
+const DarkMode = () => {
+    const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem("darkMode"));
+
     useEffect(() => {
-
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.body.classList.add('dark')
+            document.documentElement.classList.add('dark')
             setIsDarkMode(true);
-
         } else {
             document.documentElement.classList.remove('dark');
             setIsDarkMode(false);
-
         }
-    }, []);
-
+    }, [isDarkMode]);
 
     const toggleDarkMode = () => {
         setIsDarkMode((prev) => !prev);
 
         isDarkMode ? localStorage.theme = 'light' : localStorage.theme = 'dark'
-
 
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark')
@@ -33,26 +29,18 @@ const DarkToggle = () => {
 
     };
 
-    const darkModeHandler = () => {
-        setIsDarkMode(!isDarkMode)
-        document.body.classList.toggle("dark");
-    }
 
     return (
         <>
-            <div className="">
+            <div className="p-2  dark:bg-gray-700 dark:text-white flex">
 
                 <button
-                    className={` w-20 h-10 rounded-full ${
-                        isDarkMode ? "bg-green-600" : "bg-gray-700"
+                    className={` w-16 h-8 rounded-full ${
+                        isDarkMode ? "bg-gradient-to-r from-green-400" : "bg-gray-200"
                     }`}
                     onClick={toggleDarkMode}
                 >
-      <span
-          className={`${
-              isDarkMode ? "translate-x-8" : "translate-x-0"
-          } inline-block w-7 h-7 bg-white rounded-full shadow transform transition-transform mr-9 mt-1`}
-      ></span>
+      <span className={`${isDarkMode ? "translate-x-9" : "translate-x-0"} inline-block w-5 h-5 bg-white rounded-full shadow transform transition-transform mr-9 mt-1`}></span>
                 </button>
 
             </div>
@@ -62,4 +50,4 @@ const DarkToggle = () => {
 
     );
 };
-export default DarkToggle;
+export default DarkMode;
