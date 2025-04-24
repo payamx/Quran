@@ -5,7 +5,7 @@ import {Outlet} from "react-router-dom";
 
 const SharedLayout = () => {
     return (
-        <div className="">
+        <div >
             <DarkMode />
             <Outlet/>
 
