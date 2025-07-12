@@ -1,0 +1,44 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Noto Kufi Arabic'; /* Replace with your Arabic font name */
+  src: url('/fonts/NotoKufiArabic-Regular.ttf') format('truetype'),
+  url('/fonts/NotoSansArabic-Regular.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Light'; /* Replace with your Arabic font name */
+  src: url('/fonts/Roboto-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vazir'; /* Replace with your Farsi font name */
+  src: url('/fonts/Vazir-Regular.woff2') format('woff2'),
+  url('/fonts/Vazir-Regular.woff') format('woff'),
+  url('/fonts/Shabnam-Medium.woff2') format('woff2'),
+  url('/fonts/Shabnam-Medium.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Shabnam'; /* Replace with your Farsi font name */
+  src: url('/fonts/Shabnam-Medium.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Notosans'; /* Replace with your Farsi font name */
+  src: url('/fonts/Noto sans Arabic/NotoSansArabic-VariableFont_wdth,wght.ttf') format('woff'),
+  url('/fonts/Noto sans Arabic/NotoSansArabic-Medium.ttf') format('truetype'),
+  url('/fonts/Noto sans Arabic/NotoSansArabic-Thin.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
